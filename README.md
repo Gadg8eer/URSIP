@@ -1,6 +1,6 @@
 It would be impossible to do this set with one license, so PLEASE read the following:
 This project contains code distributed without license under the implication and understanding that a game mod for Stellaris based on interacting with its' existing unencrypted code is well within fair use and would not result in legal action because Stellaris mods are easily modifiable right from the Steam Workshop.
-Please DO NOT redistribute this code, as it contains images which I have been given EXCLUSIVE rights to put into this mod ("exclusive" meaning "Just because I did it, doesn't mean you can; Please ask the original artist if you want to re-use an image in URSIP." rather that "only I get to do it").
+Please DO NOT redistribute this code, as it contains images which I have been given EXCLUSIVE rights to put into this mod ("exclusive" meaning "Just because I did it, doesn't mean you can; Please ask the original artist if you want to re-use an image in URSIP." rather than "only I get to do it").
 
 If this mod is no longer being updated, I and all the artists give full permission to fork this mod ONLY for the purposes of updating the code to work with the latest version of Stellaris. You may NOT use ANY artwork for ANY other purpose without both A) the permission of the original artist, and B) following the license included in the artist's files within the mod. The only exception is if the license for a given artist's character art specifies otherwise (Such as GPL licenses and some Creative Commons licenses)
 
