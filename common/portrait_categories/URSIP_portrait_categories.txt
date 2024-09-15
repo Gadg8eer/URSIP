@@ -1,10 +1,11 @@
 # Categories of portrait sets used in empire design view.
 # Portrait sets are listed in portrait_sets database.
 
-uploadable_humanoids = {
+uploadables = {
 	name = HUMXR
 
 	sets = {
-		uploadable_humanoids
+		humanoid_virtual
+		conceptoids
 	}
 }
