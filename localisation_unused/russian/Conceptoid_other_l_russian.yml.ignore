@@ -1,0 +1,7 @@
+﻿l_russian:
+ situation_conceptoid_sr_zro_deficit: "Недостаток ресурса: Зро"
+ situation_conceptoid_sr_zro_deficit_desc: "У нас недостаточно пыли зро, чтобы поддерживать существование всех концептоидов в нашей империи!"
+ situation_conceptoid_sr_zro_deficit_type: "Дефицит зро"
+ deficit_approach_organic_overcharge: "Ускорить разложение тел мучеников"
+
+ mod_planet_conceptoid_jobs_sr_zro_produces_mult: "Увеличение производства £sr_zro£ зро."

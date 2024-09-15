@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+ citizenship_conceptoid_host: "概念种宿主"
+
+ pop_cat_posessed_organic: "痴迷于此的有机体"
+ pop_cat_posessed_organic_plural: "痴迷于此的有机体"
+
+ job_exployted_organic: "殉道者"
+ job_exployted_organic_plural: "殉道者"
+ job_exployted_organic_desc: "这些有机体的身体慢慢衰败成泽洛尘。这个过程足够慢，所以它们的组织有时间再生。他们会非常痛苦，如果他们的思想尚在的话。"
+
+ job_posessed_organic: "容器"
+ job_posessed_organic_plural: "容器"
+ job_posessed_organic_desc: "被有知觉的概念占据头脑的有机体。"
+
+ pop_category_conceptoid: "概念种"

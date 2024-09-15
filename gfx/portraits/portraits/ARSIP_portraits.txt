@@ -1,0 +1,133 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+############################
+
+	example_red = 
+	example_green = 
+	example_blue = 
+
+	# Human
+	synthXR_f = {
+		entity = "synthetics_XR_portrait_01_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "machineage_portrait_synthetic_06"
+
+		portrait_evolution = {
+			evolution_stages = {
+				# portrait stages
+				{
+					values = {
+						# stage 1, feminine female variant
+						{ texturefile = "gfx/models/portraits/example/example_red.dds" }
+					}
+					values = {
+						# stage 1, masculine female variant
+						{ texturefile = "gfx/models/portraits/example/example_green.dds" }
+					}
+					values = {
+						# stage 1, Jenny Everywhere
+						{ texturefile = "gfx\models\portraits\synthetics_machine\StevenWintle\Jenny_Everywhere.dds" }
+					}
+#					values = {
+						# stage 1 variant 4
+#						{
+#							decal = "gfx/models/portraits/synthetics_machine/synthetics_02_portrait_06_color_salmon.dds"
+#							mask = "gfx/models/portraits/common/empty_portrait_evolution_mask.dds"
+#						}
+#					}
+#					values = {
+						# stage 1 variant 5
+#						{
+#							decal = "gfx/models/portraits/synthetics_machine/synthetics_02_portrait_06_color_teal.dds"
+#							mask = "gfx/models/portraits/common/empty_portrait_evolution_mask.dds"
+#						}
+#					}
+
+					#leader, pop or species scope (when called with species scope, from subscope can contain a country species related to)
+					# Set to always = no as we only use this for showing the portrait in the empire creator
+					# The actual portrait swap is done via set_synth_or_robot_portrait_effect to ensure the species archetype is changed as well
+					trigger = {
+						always = no
+					}
+				}
+			}
+		}
+
+	#	character_textures = {
+		#	"gfx/models/portraits/example/example_red.dds"
+	#		"gfx/models/portraits/synthetics/synthetics_01_portrait_06_f_color_candy.dds"
+		#	"gfx/models/portraits/example/example_green.dds"
+	#		"gfx/models/portraits/synthetics/synthetics_01_portrait_06_f_color_pink.dds"
+	#	}
+
+#		custom_close_up_position_offset = { x = 85 y = 410 }
+#		custom_close_up_scale = 2.3
+	}
+
+	# Human
+	synthXR_m = {
+		entity = "synthetics_XR_portrait_01_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "machineage_portrait_synthetic_06"
+
+		portrait_evolution = {
+			evolution_stages = {
+				# portrait stages
+				{
+					values = {
+						# stage 1, feminine male variant
+						{ texturefile = "gfx/models/portraits/example/example_green.dds" }
+					}
+					values = {
+						# stage 1, masculine male variant
+						{ texturefile = "gfx/models/portraits/example/example_blue.dds" }
+					}
+#					values = {
+						# stage 1 variant 4
+#						{
+#							decal = "gfx/models/portraits/synthetics_machine/synthetics_02_portrait_06_color_salmon.dds"
+#							mask = "gfx/models/portraits/common/empty_portrait_evolution_mask.dds"
+#						}
+#					}
+#					values = {
+						# stage 1 variant 5
+#						{
+#							decal = "gfx/models/portraits/synthetics_machine/synthetics_02_portrait_06_color_teal.dds"
+#							mask = "gfx/models/portraits/common/empty_portrait_evolution_mask.dds"
+#						}
+#					}
+					values = {
+						# stage 1, Gadg8eer
+						{ texturefile = "gfx\models\portraits\synthetics_machine\CodyGibling\Gadg8eer.dds" }
+					}
+
+					#leader, pop or species scope (when called with species scope, from subscope can contain a country species related to)
+					# Set to always = no as we only use this for showing the portrait in the empire creator
+					# The actual portrait swap is done via set_synth_or_robot_portrait_effect to ensure the species archetype is changed as well
+					trigger = {
+						always = no
+					}
+				}
+			}
+		}
+
+	#	character_textures = {
+		#	"gfx/models/portraits/example/example_green.dds"
+	#		"gfx/models/portraits/synthetics/synthetics_01_portrait_06_m_color_orange.dds"
+		#	"gfx/models/portraits/example/example_blue.dds"
+	#		"gfx/models/portraits/synthetics/synthetics_01_portrait_06_m_color_salmon.dds"
+	#	}
+
+#		custom_close_up_position_offset = { x = 85 y = 410 }
+#		custom_close_up_scale = 2.3
+	}

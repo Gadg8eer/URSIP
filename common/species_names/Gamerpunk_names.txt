@@ -1,0 +1,9 @@
+HUMXR1 = {
+	uploadable_humanoid1 = {
+		name = Human
+		plural = Humans
+		home_planet = "Hearth"
+		home_system = Soul
+		name_list = "HUM1"
+	}
+}

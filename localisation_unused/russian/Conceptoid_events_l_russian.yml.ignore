@@ -1,0 +1,12 @@
+﻿l_russian:
+ conceptoid_random.1.name: "Идеальные вместилища"
+ conceptoid_random.1.desc: "После высадки на [This.GetName], некоторые из наших колонистов предприняли оживлённые попытки по завладению разумом местных существ, особенно [event_target:perfect_vessel_species.GetName]. К удивлению, преразумные оказали весьма радушными к нашему присутствию в своих телах, и наши местные [Owner.GetResearchers] запросили разрешение на изучение [event_target:perfect_vessel_species.GetAdj], тем не менее, для завершения исследования необходимо большое число тестовых субъектов.\n\nИз-за этого, процесс проведения предложенного проекта создаст условия для вымирания [event_target:perfect_vessel_species.GetAdj]."
+ conceptoid_random.1.a: "Одобрить исследование"
+ conceptoid_random.1.a.tooltip: "Начать специальный проект по исследованию биологии [event_target:perfect_vessel_species.GetName].\n§RВсе поселения [event_target:perfect_vessel_species.GetName] умрут.§!"
+ conceptoid_random.1.b: "Оставить их в покое"
+ CONCEPTOID_PRESAPIENT_STUDY: "Изучение предразумных"
+ CONCEPTOID_PRESAPIENT_STUDY_DESC: "Субъекты для тестов подготовлены. Теперь все, что нам нужно - это начать проект."
+ conceptoid_random.2.name: "Изучение Завершено!"
+ conceptoid_random.2.desc: "После умерщвления 99% популяции [event_target:perfect_vessel_species.GetName] мы наконец смогли понять причину их потенциала для вселения. Несмотря на их неразвитые мозги, у низ есть специальные рецепторы, в обычных условиях предназначенные для поиска добычи на основе её уникальной псионической проекции. По совпадению, также этот орган выступает для нас связующим звеном для привязки к их телам."
+ conceptoid_random.2.a: "Восхитительно"
+ conceptoid_random.2.a.tooltip: "Теперь у нас есть доступ к добавлению признака $trait_conceptoid_open_minded$ при генетической модификации."

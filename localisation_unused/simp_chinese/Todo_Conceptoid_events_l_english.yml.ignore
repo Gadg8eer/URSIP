@@ -1,0 +1,12 @@
+﻿l_english:
+ conceptoid_random.1.name: "Perfect Vessels"
+ conceptoid_random.1.desc: "After settling on [This.GetName], some of our younger colonists have excitedly attempted to possess the local species, especially the [event_target:perfect_vessel_species.GetName]. Surprisingly, the pre-sapients appear to be quite welcoming to our presence in their bodies, and our local [Owner.GetResearchers] have asked for permission to study the [event_target:perfect_vessel_species.GetAdj], though in order to complete the study a large number of test subjects is needed.\n\nDue to this, going through with the proposed project will effectively render the [event_target:perfect_vessel_species.GetAdj]'s extinct."
+ conceptoid_random.1.a: "Approve the study"
+ conceptoid_random.1.a.tooltip: "Start a special project to study the biology of the [event_target:perfect_vessel_species.GetName] species.\n§RAll pops of the [event_target:perfect_vessel_species.GetName] species will die.§!"
+ conceptoid_random.1.b: "Leave them"
+ CONCEPTOID_PRESAPIENT_STUDY: "Presapient Study"
+ CONCEPTOID_PRESAPIENT_STUDY_DESC: "The subjects are ready. Now all we need is to commence the project."
+ conceptoid_random.2.name: "Study Complete!"
+ conceptoid_random.2.desc: "After burning through 99% of the [event_target:perfect_vessel_species.GetName] subjects we finally managed to discover the reason for their potential for possession. Despite their undeveloped brains, they have special receptors which would normally be used to detect their prey based on that prey's unique psionic projection. Coincidentally, it also acts as a tethering point for when we wish to bind ourselves to their body."
+ conceptoid_random.2.a: "Amazing"
+ conceptoid_random.2.a.tooltip: "We now have access to the $trait_conceptoid_vivid_imagination$ trait for genetic modification."

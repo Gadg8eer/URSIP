@@ -1,0 +1,15 @@
+﻿l_russian:
+ citizenship_conceptoid_host: "Переносщик концептоидов"
+
+ pop_cat_posessed_organic: "Одержимый органик"
+ pop_cat_posessed_organic_plural: "Одержимые органики"
+
+ job_exployted_organic: "Мученик"
+ job_exployted_organic_plural: "Мученики"
+ job_exployted_organic_desc: "Тела этих органиков медленно разпадаются в пыль зро. Данный процесс достаточно медлителен, чтобы их ткани успевали регенерировать. Если бы их разум не был заблокирован, они бы испытывали сильнейшую боль."
+
+ job_posessed_organic: "Вместилище"
+ job_posessed_organic_plural: "Вместилища"
+ job_posessed_organic_desc: "Органики, чей разум стал домом для разумных концепций."
+
+ pop_category_conceptoid: "Концептоид"

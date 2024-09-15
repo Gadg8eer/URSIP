@@ -1,0 +1,551 @@
+leader_trait_ursip_codygibling_gadg8eer = {
+	starting_ruler_trait = yes
+	modification = no
+	cost = 1
+	inline_script = {
+		script =  trait/icon
+		CLASS = scientist
+		ICON = "GFX_trait_mechanical"
+		RARITY = unique
+		COUNCIL = yes
+		TIER = 1
+	}
+	leader_potential_add {
+		gender = male
+		leader_class = { commander official scientist }
+		is_councilor = no
+		NOT = {
+			from = {
+				has_ethic = "ethic_gestalt_consciousness"
+			}
+		}
+	}
+	slave_cost = {
+		energy = 810
+	}
+
+### When Gadg8eer is uploaded or a Conceptoid, but he is older than 10, his age will be reverted to 10 and his original gender and his name will be enforced.
+### This is meant to repeat whenever he would become a year older.
+	triggered_self_modifier = {
+		who = {
+			event_target:Gadg8eer = {
+				potential = {
+					OR {
+						AND {
+							OR = {
+								has_trait = leader_trait_virtual
+								has_trait = trait_conceptoid
+							}
+							NOT = {
+								hide_age = no
+								leader age = 10
+								gender = male
+								is_immortal = no
+							}
+						}
+						OR = {
+							hide_age = yes
+							leader_age > 10
+							leader_age < 10
+							gender = female
+							gender = no
+							is_immortal = yes
+						}
+					}
+				}
+				set_age = 10
+				hide_age = no
+				set_gender = male
+				set_immortal = yes
+				set_name = leader_codygibling_gadg8eer/ruler
+			}
+		}
+	}
+	
+### Sorry, but you don't get to rename me!
+	triggered_self_modifier = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+			is_idle = no				# whether the leader is idle
+		}
+		potential = {
+			on_single_player_save_game_load
+			OR = {
+				has_trait = leader_trait_ursip_codygibling_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_social_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+			}
+		}
+		set_name = leader_codygibling_gadg8eer/ruler
+	}
+	
+### Tooltip
+	triggered_self_modifier = {
+		potential = { is_councilor = no } #has potential only when NOT on council
+		show_if_not_potential = yes #show a tooltip, for effects of adding Gadg8eer to the council, only when on council by reversing display criteria WITHOUT reversing effect criteria
+		not_potential_override_text_key = ursip_codygibling_gadg8eer_on_council
+		leaders_upkeep_mult = -0.10 #tooltip displays game's default reduction in leader upkeep from removing councillor
+	}
+### Leader bonuses
+	councilor_modifier = {
+		category_physics_research_speed_mult = 0.08
+		category_engineering_research_speed_mult = 0.10
+		# increased chance to discover rare techs (weighted in tech-script)
+		species_leader_exp_gain = 0.10
+	}
+	
+### Trait conflicts
+	gender = male
+	leader_class = { admiral scientist general governor } # available for all starting roles
+	opposites = {
+		leader_trait_paranoid
+		leader_trait_paranoid_2
+		leader_trait_spark_of_genius
+		leader_trait_spark_of_genius_2
+		leader_trait_maniacal
+		leader_trait_maniacal_2
+		leader_trait_maniacal_3
+### can't be any of the following characters at the same time
+		leader_trait_ursip_mistereightysix_arcoiris
+		leader_trait_ursip_mistereightysix_arcoiris_2
+		leader_trait_ursip_steven_wintle_jenny_everywhere
+		leader_trait_ursip_steven_wintle_jenny_everywhere_2
+		leader_trait_ursip_codygibling_playing_gadg8eer
+	}
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+	ai_weight = 10
+}
+
+### Advanced variant
+leader_trait_ursip_codygibling_quick_gadg8eer = {
+	replace_traits = { "leader_trait_ursip_codygibling_gadg8eer" }
+	modification = no
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_trait_chosen"
+		RARITY = rare
+		COUNCIL = yes
+		TIER = 2
+	}
+	leader_potential_add {
+		gender = male
+		leader_class = { commander official scientist } # available for all starting roles except governor
+		
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	slave_cost = {
+		sr_zro = 10
+	}
+
+### When Gadg8eer is uploaded or a Conceptoid, but he is older than 10, his age will be reverted to 10 and his original gender and his name will be enforced.
+### This is meant to repeat whenever he would become a year older.
+	triggered_self_modifier = {
+		who = {
+			event_target:Gadg8eer = {
+				potential = {
+					OR {
+						AND {
+							OR = {
+								has_trait = leader_trait_virtual
+								has_trait = trait_conceptoid
+							}
+							NOT = {
+								hide_age = no
+								leader age = 10
+								gender = male
+								is_immortal = no
+							}
+						}
+						OR = {
+							hide_age = yes
+							leader_age > 10
+							leader_age < 10
+							gender = female
+							gender = no
+							is_immortal = yes
+						}
+					}
+				}
+				set_age = 10
+				hide_age = no
+				set_gender = male
+				set_immortal = yes
+				set_name = leader_codygibling_gadg8eer/ruler
+			}
+		}
+	}
+	
+### Sorry, but you don't get to rename me!
+	triggered_self_modifier = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+			is_idle = no				# whether the leader is idle
+		}
+		potential = {
+			on_single_player_save_game_load
+			OR = {
+#				has_trait = leader_trait_ursip_codygibling_gadg8eer
+				has_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_social_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+			}
+		}
+		set_name = leader_codygibling_gadg8eer/ruler
+	}
+	
+### If Gadg8eer becomes 86 years old or is removed from the position of ruler, he dies.
+	triggered_self_modifier = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+		}
+		potential = {
+			OR = {
+				on_ruler_removed
+				on_ruler_back_to_pre_ruler_class
+				AND = {
+					age > 85
+					is_immortal = no
+					NOT = {
+						has_trait = trait_conceptoid
+					}
+				}
+			}
+		}
+		immediate = {
+			kill_leader = {
+			show_notification = yes
+			fire = no
+			}
+		}
+	}
+
+### Tooltip
+	triggered_self_modifier = {
+		potential = { is_councilor = no } #has potential only when NOT on council
+		show_if_not_potential = yes #show a tooltip, for effects of adding Gadg8eer to the council, only when on council by reversing display criteria WITHOUT reversing effect criteria
+		not_potential_override_text_key = ursip_codygibling_gadg8eer_on_council
+		leaders_upkeep_mult = -0.10 #tooltip displays game's default reduction in leader upkeep from removing councillor
+	}
+### Leader bonuses
+	councilor_modifier = {
+		category_physics_research_speed_mult = 0.08
+		category_engineering_research_speed_mult = 0.10
+		# increased chance to discover rare techs (weighted in tech-script)
+		species_leader_exp_gain = 0.10
+	}
+	
+### Trait conflicts
+	gender = male
+	leader_class = { commander scientist } # available for all starting roles except governor
+	opposites = {
+		leader_trait_paranoid
+		leader_trait_paranoid_2
+		leader_trait_spark_of_genius
+		leader_trait_spark_of_genius_2
+		leader_trait_maniacal
+		leader_trait_maniacal_2
+		leader_trait_maniacal_3
+### Can't be any of the following characters at the same time
+		leader_trait_ursip_mistereightysix_arcoiris
+		leader_trait_ursip_mistereightysix_arcoiris_2
+		leader_trait_ursip_steven_wintle_jenny_everywhere
+		leader_trait_ursip_steven_wintle_jenny_everywhere_2
+		leader_trait_ursip_codygibling_playing_gadg8eer
+	}
+	ai_weight = 200
+}
+
+# Statecraft variant
+leader_trait_ursip_codygibling_social_gadg8eer = {
+	replace_traits = { "leader_trait_ursip_codygibling_gadg8eer" }
+	modification = no
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_trait_chosen"
+		RARITY = unique
+		COUNCIL = yes
+		TIER = 2
+	}
+	leader_potential_add {
+#		gender = male
+# must be a commander or official for this to be available
+		leader_class = { commander official } 
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	slave_cost = {
+		sr_zro = 10
+	}
+
+### When Gadg8eer is uploaded or a Conceptoid, but he is older than 10, his age will be reverted to 10 and his original gender and his name will be enforced.
+### This is meant to repeat whenever he would become a year older.
+	triggered_self_modifier = {
+		who = {
+			event_target:Gadg8eer = {
+				potential = {
+					OR {
+						AND {
+							OR = {
+								has_trait = leader_trait_virtual
+								has_trait = trait_conceptoid
+							}
+							NOT = {
+								hide_age = no
+								leader age = 10
+								gender = male
+								is_immortal = no
+							}
+						}
+						OR = {
+							hide_age = yes
+							leader_age > 10
+							leader_age < 10
+							gender = female
+							gender = no
+							is_immortal = yes
+						}
+					}
+				}
+				set_age = 10
+				hide_age = no
+				set_gender = male
+				set_immortal = yes
+				set_name = leader_codygibling_gadg8eer/ruler
+			}
+		}
+	}
+	
+### Sorry, but you don't get to rename me!
+	triggered_self_modifier = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+			is_idle = no				# whether the leader is idle
+		}
+		potential = {
+			on_single_player_save_game_load
+			OR = {
+#				has_trait = leader_trait_ursip_codygibling_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+				has_trait = leader_trait_ursip_codygibling_social_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+			}
+		}
+		set_name = leader_codygibling_gadg8eer/ruler
+	}
+	
+### If Gadg8eer becomes 86 years old or is removed from the position of ruler, he dies.
+	triggered_self_modifier = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+		}
+		potential = {
+			OR = {
+				on_ruler_removed
+				on_ruler_back_to_pre_ruler_class
+				AND = {
+					age > 85
+					is_immortal = no
+					NOT = {
+						has_trait = trait_conceptoid
+					}
+				}
+			}
+		}
+		immediate = {
+			kill_leader = {
+			show_notification = yes
+			fire = no
+			}
+		}
+	}
+
+### Tooltip
+	triggered_self_modifier = {
+		potential = { is_councilor = no } #has potential only when NOT on council
+		show_if_not_potential = yes #show a tooltip, for effects of adding Gadg8eer to the council, only when on council by reversing display criteria WITHOUT reversing effect criteria
+		not_potential_override_text_key = ursip_codygibling_gadg8eer_on_council
+		leaders_upkeep_mult = -0.10 #tooltip displays game's default reduction in leader upkeep from removing councillor
+	}
+### Leader bonuses
+	councilor_modifier = {
+		category_physics_research_speed_mult = 0.08
+		category_engineering_research_speed_mult = 0.10
+		# increased chance to discover rare techs (weighted in tech-script)
+		species_leader_exp_gain = 0.10
+	}
+	
+### Trait conflicts
+#	gender = male
+##### must be an official or scientist for this to be available
+#	leader_class = { official commander }
+	opposites = {
+		leader_trait_paranoid
+		leader_trait_paranoid_2
+		leader_trait_spark_of_genius
+		leader_trait_spark_of_genius_2
+		leader_trait_maniacal
+		leader_trait_maniacal_2
+		leader_trait_maniacal_3
+### Can't be any of the following characters at the same time
+		leader_trait_ursip_mistereightysix_arcoiris
+		leader_trait_ursip_mistereightysix_arcoiris_2
+		leader_trait_ursip_steven_wintle_jenny_everywhere
+		leader_trait_ursip_steven_wintle_jenny_everywhere_2
+		leader_trait_ursip_codygibling_playing_gadg8eer
+	}
+	ai_weight = 201
+}
+
+# roleplay mode!
+leader_trait_ursip_codygibling_playing_gadg8eer = {
+	starting_ruler_trait = yes
+	modification = no
+	cost = 1
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = icon = "gfx/interface/icons/traits/leader_trait_adaptable.dds"
+		RARITY = unique
+		COUNCIL = yes
+		TIER = 1
+	}
+	leader_potential_add {
+		leader_class = { ruler }
+		is_councilor = no
+		NOT = {
+			from = {
+				has_ethic = "ethic_gestalt_consciousness"
+			}
+		}
+	}
+	slave_cost = {
+		energy = 10810
+		}
+	
+### When Gadg8eer is uploaded or a Conceptoid, but he is older than 10, his age will be reverted to 10 and his original gender and his name will be enforced.
+### This is meant to repeat whenever he would become a year older.
+	triggered_self_modifier = {
+		who = {
+			event_target:Gadg8eer = {
+				potential = {
+					OR {
+						AND {
+							OR = {
+								has_trait = leader_trait_virtual
+								has_trait = trait_conceptoid
+							}
+							NOT = {
+								hide_age = no
+								leader age = 10
+								gender = male
+								is_immortal = no
+							}
+						}
+						OR = {
+							hide_age = yes
+							leader_age > 10
+							leader_age < 10
+							gender = female
+							gender = no
+							is_immortal = yes
+						}
+					}
+				}
+				set_age = 10
+				hide_age = no
+				set_gender = male
+				set_immortal = yes
+				set_name = leader_codygibling_gadg8eer/ruler
+			}
+		}
+	}
+	
+### Sorry, but you don't get to rename me!
+	triggered_self_modifier = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+			is_idle = no				# whether the leader is idle
+		}
+		potential = {
+			on_single_player_save_game_load
+			OR = {
+#				has_trait = leader_trait_ursip_codygibling_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+#				has_trait = leader_trait_ursip_codygibling_social_gadg8eer
+				has_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+			}
+		}
+		set_name = leader_codygibling_gadg8eer/ruler
+	}
+
+### If Gadg8eer becomes 86 years old or is removed from the position of ruler, he dies.
+	triggered_self_modifier = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+		}
+		potential = {
+			OR = {
+				on_ruler_removed
+				on_ruler_back_to_pre_ruler_class
+				AND = {
+					age > 85
+					is_immortal = no
+					NOT = {
+						has_trait = trait_conceptoid
+					}
+				}
+			}
+		}
+		immediate = {
+			kill_leader = {
+			show_notification = yes
+			fire = no
+			}
+		}
+	}
+
+### Tooltip
+	triggered_self_modifier = {
+		potential = { is_councilor = no } #has potential only when NOT on council
+		show_if_not_potential = yes #show a tooltip, for effects of adding Gadg8eer to the council, only when on council by reversing display criteria WITHOUT reversing effect criteria
+		not_potential_override_text_key = ursip_codygibling_gadg8eer_on_council
+		leaders_upkeep_mult = -0.10 #tooltip displays game's default reduction in leader upkeep from removing councillor
+	}
+### Leader bonuses
+	councilor_modifier = {
+		category_physics_research_speed_mult = 0.08
+		category_engineering_research_speed_mult = 0.10
+		# increased chance to discover rare techs (weighted in tech-script)
+		species_leader_exp_gain = 0.10
+	}
+	
+### Trait conflicts
+#	gender = male
+##### must be a commander for this to be available
+#	leader_class = { commander }
+	opposites = {
+		leader_trait_paranoid
+		leader_trait_paranoid_2
+		leader_trait_spark_of_genius
+		leader_trait_spark_of_genius_2
+		leader_trait_maniacal
+		leader_trait_maniacal_2
+		leader_trait_maniacal_3
+### can't be any of the following characters at the same time
+		leader_trait_ursip_mistereightysix_arcoiris
+		leader_trait_ursip_mistereightysix_arcoiris_2
+		leader_trait_ursip_steven_wintle_jenny_everywhere
+		leader_trait_ursip_steven_wintle_jenny_everywhere_2
+		leader_trait_ursip_codygibling_playing_gadg8eer
+	}
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+	ai_weight = 0
+}

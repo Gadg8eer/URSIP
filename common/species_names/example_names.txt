@@ -1,0 +1,9 @@
+EXAMPLE = {
+	example = {
+		name = Example
+		plural = Examples
+		home_planet = "Prime Example"
+		home_system = Exemplar
+		name_list = "HUM1"
+	}
+}

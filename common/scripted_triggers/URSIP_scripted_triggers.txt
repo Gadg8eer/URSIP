@@ -1,0 +1,337 @@
+
+### URSIP is Active
+usrsip_active_startup = {
+	pre_triggers = {
+		ursip.start.1 = yes				# whether the leader exists and is alive
+	}
+	is_triggered_only = yes
+}
+
+### When it doesn't matter what the specific trait is, only that it makes the ruler into that character.
+### If the leader has one of these leader traits, this triggers the startup sequence for Gadg8eer as ruler.
+ursip_is_gadg8eer_startup_0 = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+	}
+	on_game_start = {
+		limit = {
+			owner = {
+				ruler = {
+					OR = {
+						has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+					}
+				}
+			}
+		}
+	}
+}
+
+ursip_is_gadg8eer_startup_1 = {
+	on_press_begin = {
+		limit = {
+			URSIP_start_0_gadg8eer
+		}
+	}
+}
+
+ursip_is_gadg8eer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	if = {
+		limit = {
+			who = {
+				event_target:Gadg8eer = {
+					OR = {
+						has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+					}
+				}
+		}
+	}
+}
+
+### The default version of the character.
+### Thematically, has a few Ninjala, Tomato Adventure, Codename: Kids Next Door and Splatoon references. I really do have a childish taste towards fiction.
+### What do you expect? lol
+ursip_is_basic_gadgeteer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+				}
+		}
+	}
+	
+}
+
+### Named after the ability from GURPS 3e.
+### Thematically, basically every super genius boy you saw in a 1990s cartoon.
+ursip_is_quick_gadgeteer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+				}
+		}
+	}
+}
+
+### When it doesn't matter what the specific trait is, only that it follows the typical upgrade path.
+ursip_is_normalupgrade_gadg8eer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					OR = {
+						has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+					}
+					NOT = {
+						has_ruler_trait = trait_conceptoid
+					}
+				}
+		}
+	}
+}
+
+### Thematically, references to Dark Cloud 2 (Dark Chronicle in JP and PAL regions), No Game No Life and Digimon Frontier.
+### Named after the Isekai Hero ability- I mean, the "Social Gadgeteer" ability from GURPS 3e.
+ursip_is_gadgeteer_isekai_protag = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
+				}
+		}
+	}
+}
+
+### When it doesn't matter what the specific trait is, only that it can be achieved in the same savegame as the basic version.
+### Contains all three traits named after those in GURPS 3e
+ursip_is_GURPS_gadg8eer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					AND = {
+						OR = {
+							has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
+						}
+						NOT = {
+							has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+							has_ruler_trait = trait_conceptoid
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### Thematically, mostly a No Game No Life reference. Mostly. There's a lot more of Nobilis 3e in this than you'd expect.
+### After all, Tet wasn't the only character to bear a title of the "God of Play".
+ursip_is_gadg8eer_tetlike = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+				}
+			}
+		}
+	}
+}
+
+### Who knows what really happens when a video game starts to glitch?
+### That's right, Scotty, we're doing cheap fanservice now!
+### Thematically, full of references for everything from TRON to ReBoot to MegaMan Battle Network to Watch_dogs to The Finals. And yes, Glitch Techs. If it involves computers heavily, it's probably on the list.
+ursip_is_gadg8eer_vidjateer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					AND = {
+						OR = {
+							has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+						}
+						has_ruler_trait = leader_trait_virtual
+					}
+				}
+			}
+		}
+	}
+}
+
+### Normally I really don't like the SCP Foundation's canon, but something about the Oneiroi Collective was just plain interesting and the Conceptoids pretty much are that but in Stellaris
+### Thematically, leans heavily into anything and everything that takes place in or is themed around dreams.
+ursip_is_oneiroid_westerner = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+		who = {
+			event_target:Gadg8eer = {
+				AND = {
+					OR = {
+						has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
+						has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+					}
+					has_ruler_trait = trait_conceptoid
+				}
+			}
+		}
+	}
+}
+
+### If he turns 86, that's it. He's dead. If he gets fired, he also dies. If he dies, the trigger fires.
+ursip_is_deadbutessential_ursip_codygibling_gadg8eer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					OR = {
+						AND = {
+							has_leader_flag = leader_is_URSIP_CodyGibling_Gadg8eer
+							leader_age = 86
+							is_immortal = no
+						}
+						AND = {
+							is_immortal = no
+							on_leader_death
+							NOT = {
+								leader_age > 85
+							}
+						}
+						on_leader_fired
+					}
+				}
+			}
+		}
+	}
+}
+
+### If he would have died of old age, but is immortal without eternal youth, this trigger fires.
+ursip_is_deadbutimmortal_ursip_codygibling_gadg8eer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					AND = {
+						NOR = {
+							is_oneiroid_westerner = yes
+							is_vidjateer = yes
+						}
+						is_immortal = yes
+						leader_age > 85
+					}
+				}
+			}
+		}
+	}
+}
+
+### If he would be older than 10, but is a Conceptoid, this trigger fires.
+ursip_is_deadbutdreaming_ursip_codygibling_gadg8eer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					AND = {
+						is_oneiroid_westerner = yes
+						leader_age > 10
+					}
+				}
+			}
+		}
+	}
+}
+
+### If he would be older than 10, but has become Virtual, this trigger fires.
+ursip_is_deadbutrespawns_ursip_codygibling_gadg8eer = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = no				# whether the leader is idle
+	}
+	trigger = {
+		AND = {
+			ursip_is_gadg8eer = true
+			who = {
+				event_target:Gadg8eer = {
+					AND = {
+						is_vidjateer = yes
+						leader_age > 10 # 10-ish?
+					}
+				}
+			}
+		}
+	}
+}

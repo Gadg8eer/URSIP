@@ -1,0 +1,5 @@
+portraits = {
+	example_red = { texturefile = "gfx/models/portraits/example/example_red.dds" }
+	example_green = { texturefile = "gfx/models/portraits/example/example_green.dds" }
+	example_blue = { texturefile = "gfx/models/portraits/example/example_blue.dds" }
+}

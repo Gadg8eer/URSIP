@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ situation_conceptoid_sr_zro_deficit: "资源赤字：泽洛"
+ situation_conceptoid_sr_zro_deficit_desc: "我们没有足够的泽洛尘来维持我们帝国中所有概念种的存在！"
+ situation_conceptoid_sr_zro_deficit_type: "泽洛赤字"
+ deficit_approach_organic_overcharge: "加快殉道者的身体分解"
+
+ mod_planet_conceptoid_jobs_sr_zro_produces_mult: "提高 £sr_zro£ 泽洛产量"
