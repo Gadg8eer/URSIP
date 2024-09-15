@@ -36,7 +36,7 @@ leader_trait_ursip_codygibling_gadg8eer = {
 								has_trait = leader_trait_virtual
 								has_trait = trait_conceptoid
 							}
-							NOT = {
+							NOR = {
 								hide_age = no
 								leader age = 10
 								gender = male
