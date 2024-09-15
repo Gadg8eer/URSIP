@@ -14,8 +14,7 @@ leader_trait_ursip_codygibling_gadg8eer = {
 	icon = "gfx/interface/icons/traits/GFX_trait_mechanical.dds"
 	leader_potential_add {
 		gender = male
-		leader_class = { commander official scientist }
-		is_councilor = no
+		leader_class = { official commander scientist }
 		NOT = {
 			from = {
 				has_ethic = "ethic_gestalt_consciousness"
@@ -25,8 +24,8 @@ leader_trait_ursip_codygibling_gadg8eer = {
 	modifier = {
 		
 	}
-	leader_trait = { commander official scientist }
-	leader_class = { commander official scientist }
+	leader_trait = { official commander scientist }
+	leader_class = { official commander scientist }
 	opposites = {
 		"leader_trait_paranoid"
 		"leader_trait_paranoid_2"
