@@ -1,0 +1,7 @@
+### URSIP is Active
+usrsip_active_startup = {
+	pre_triggers = {
+		ursip.start.1 = yes				# whether the leader exists and is alive
+	}
+	is_triggered_only = yes
+}
