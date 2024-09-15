@@ -1,0 +1,209 @@
+# Cody Gibling's Gadg8eer
+#- (Trademarked; I, the original creator of this file, am the one who goes by the name Cody Gibling, though to be honest its a pen name because I like my work to be able to stand on its own merits. Please don't repost this file anywhere except Stellaris mod-related websites (Steam, the Stellaris community on the FediVerse, Good Old Games, Stellaris fan forums and Guilded servers, etc.), though anyone is free to update the mod including this file to run with any version of Stellaris they prefer.) -#
+# This file is part of the Virtual Avatars: Residual Self-Image Portraits (URSIP) mod for Stellaris. The character portraits provided by this file are used under license or with the permission of the character's creator. Please read the code comments (the #???? thingies just below this) to understand what is and isn't legally okay to do with this artist's works.
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# Gadg8eer © 1990-2024 Cody Gibling. All Rights reserved.																												 #
+# Gadg8eer™ as a fictional character is a trademark of Cody Gibling under Canadian trademark law. Please don't use without permission, you'd be messing with my persona. #
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# If you understand and accept the above conditions, you may proceed.
+
+### Start with Gadg8eer
+ursip_scripted_effect_codygibling_gadg8eer_start_0 = {
+	if = {
+		immediate = {
+			owner = {
+				ruler = {
+					set_name = leader_codygibling_gadg8eer
+					leader_age_min = 10
+					set_age = 10
+					leader_age_max = 85
+					set_gender = male
+					hide_age = no
+					set_leader_flag = leader_is_URSIP_CodyGibling_Gadg8eer
+					set_pop_flag = pop_contains_URSIP_CodyGibling_Gadg8eer
+				}
+			}
+		# Set flag because THERE CAN BE ONLY ONE!
+		set_global_flag = global_rulerclaim_URSIP_CodyGibling_Gadg8eer
+	}
+}
+
+ursip_scripted_effect_codygibling_gadg8eer_start_1 = {
+	immediate = {
+		owner = {
+			ruler = {
+				save_global_event_target_as = Gadg8eer
+			}
+		}
+	}
+}
+
+### If Gadg8eer is manually removed from the position of ruler (by the player), he is returned to the position and a message is displayed.
+ursip_scripted_effect_codygibling_gadg8eer_oops_noremove = {
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = yes				# whether the leader is idle
+	}
+	on_leader_unassigned = {
+		limit = {
+			who = {
+				event_target:Gadg8eer = {
+					is_idle = yes
+					has_leader_flag = leader_is_URSIP_CodyGibling_Gadg8eer
+				}
+			}
+		}
+		immediate = {
+			who = {
+				event_target:Gadg8eer = {
+					assign_leader = ruler
+					set_leader_flag = prevent_remove_URSIP_CodyGibling_Gadg8eer
+					leader_event = {
+						id = ursip_codygibling.3
+					}
+				}
+			}
+		}
+	}
+}
+
+### If Gadg8eer becomes 86 years old or is forcibly removed from the position of ruler, he dies.
+### Also includes compatibility with Constructorvette Mod.
+ursip_scripted_effect_codygibling_death_of_an_inner_child = {
+	on_leader_death = {
+		limit = {
+			who = {
+				event_target:Gadg8eer = {
+					is_deadbutessential_ursip_codygibling_gadg8eer = yes
+				}
+			}
+		}
+		immediate = {
+			owner = {
+				country = {
+					destroy_country = yes
+				}
+			}
+		}
+	}
+	on_ruler_removed = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+		}
+		limit = {
+			who = {
+				event_target:Gadg8eer = {
+					is_deadbutessential_ursip_codygibling_gadg8eer = yes
+				}
+			}
+		}
+		immediate = {
+			who = {
+				event_target:Gadg8eer = {
+					kill_leader = {
+						show_notification = no
+						fire = no
+					}
+				}
+			}
+			owner = {
+				country = {
+					destroy_country = yes
+				}
+			}
+		}
+	}
+	on_ruler_back_to_pre_ruler_class = {
+		pre_triggers = {
+			has_owner = yes				# whether the leader exists and is alive
+		}
+		limit = {
+			who = {
+				event_target:Gadg8eer = {
+					is_deadbutessential_ursip_codygibling_gadg8eer = yes
+				}
+			}
+		}
+		immediate = {
+			who = {
+				event_target:Gadg8eer = {
+					kill_leader = {
+						show_notification = no
+						fire = no
+					}
+				}
+			}
+			owner = {
+				country = {
+					destroy_country = yes
+				}
+			}
+		}
+	}
+	= {
+		any_owned_ship = {
+			AND = {
+				has_ship_flag = ship_flag_URSIP_CodyGibling_Gadg8eer
+				is_ship_class = shipclass_colonizer
+			}
+		}
+	}
+}
+
+
+
+				
+				
+
+	triggered_self_modifier = {
+		
+		potential = {
+			OR = {
+				on_ruler_removed
+				on_ruler_back_to_pre_ruler_class
+				AND = {
+					age > 85
+					is_immortal = no
+					NOT = {
+						has_trait = trait_conceptoid
+					}
+				}
+			}
+		}
+
+			kill_leader = {
+			show_notification = yes
+			fire = no
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	on_press_begin = {
+		owner = {
+			ruler = {
+				effect = {
+					save_event_target_as = Gadg8eer
+				}
+			}
+		}
+	}
+	
+	
+	
+	event_target:Gadg8eer = {
+				hidden_effect = {
+					who = {
+						event_target:Gadg8eer = {
+							kill_leader = {
+								show_notification = no
+								heir = no
+								fire = no
+							}
+						}
+					}
+				}
+			}
