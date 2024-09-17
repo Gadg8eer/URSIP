@@ -83,8 +83,10 @@ leader_trait_ursip_codygibling_gadg8eer = {
 	### Sorry, but you don't get to rename me!
 	triggered_self_modifier = {
 		pre_triggers = {
-			has_owner = yes				# whether the leader exists and is alive
-			is_idle = no				# whether the leader is idle
+			# only if the leader exists and is alive
+			has_owner = yes
+			# except if the leader is idle
+			is_idle = no
 		}
 		who = {
 			event_target:Gadg8eer = {
@@ -104,8 +106,12 @@ leader_trait_ursip_codygibling_gadg8eer = {
 	
 ### Tooltip
 	triggered_self_modifier = {
-		potential = { is_councilor = no } #has potential only when NOT on council
-		show_if_not_potential = yes #show a tooltip, for effects of adding Gadg8eer to the council, only when on council by reversing display criteria WITHOUT reversing effect criteria
+		#has potential only when NOT on council
+		potential = {
+			is_councilor = no
+		}
+		#show a tooltip, for effects of adding Gadg8eer to the council, only when on council by reversing display criteria WITHOUT reversing effect criteria
+		show_if_not_potential = yes
 		not_potential_override_text_key = ursip_codygibling_gadg8eer_on_council
 		leaders_upkeep_mult = -0.10 #tooltip displays game's default reduction in leader upkeep from removing councillor
 	}
