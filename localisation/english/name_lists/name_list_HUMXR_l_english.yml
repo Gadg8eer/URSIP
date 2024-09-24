@@ -1051,7 +1051,7 @@
  HUMXR_CLASS_Painting51: "Treachery of Images"
  HUMXR_CLASS_Painting52: "Horse Attacking a Football Player"
  
- AUGREAL_CLASS_MusicGenre1: "Traditional Folk"
+ HUMXR_CLASS_MusicGenre1: "Traditional Folk"
  HUMXR_CLASS_MusicGenre2: "Sea Shanty"
  HUMXR_CLASS_MusicGenre3: "Classical"
  HUMXR_CLASS_MusicGenre4: "Waltz"
@@ -1101,6 +1101,9 @@
  HUMXR_CLASS_MusicGenre48: "New Wave"
  HUMXR_CLASS_MusicGenre49: "Y2Kei"
  HUMXR_CLASS_MusicGenre50: "Steampunk"
+ HUMXR_CLASS_MusicGenre51: "Dubstep"
+ HUMXR_CLASS_MusicGenre52: "Nerdcore"
+ HUMXR_CLASS_MusicGenre53: "Power Disco"
  
  HUMXR_CLASS_Literature1: "Epic of Gilgamesh"
  HUMXR_CLASS_Literature2: "Journey to the West"
@@ -2773,6 +2776,7 @@
  HUMXR_CHR_FirstName_CharacterFE: "Oswald"
  HUMXR_CHR_FirstName_CharacterFF: "Galactus"
  
+ HUMXR_CHR_LastName_Character0: "Maxwell"
  HUMXR_CHR_LastName_Character1: "Gainsborough"
  HUMXR_CHR_LastName_Character2: "Liddel"
  HUMXR_CHR_LastName_Character3: "the Angry Flower"
@@ -3024,12 +3028,35 @@
  HUMXR_CHR_LastName_CharacterFD: "Whiplash"
  HUMXR_CHR_LastName_CharacterFE: "West"
  HUMXR_CHR_LastName_CharacterFF: "the Destroyer of Worlds"
+ HUMXR_CHR_LastName_Character000: "Maylie"
+ HUMXR_CHR_LastName_Character001: "Twist"
 
- HUMXR_RULER_Steven_Wintle_F: "Jenny Everywhere"
+# HUMXR_RULER_Steven_Wintle_F: "Jenny Everywhere"
+
+
+
  HUMXR_RULER_SuggsMy****sLionel_M: "Lionel Suggs"
  
-# HUMXR_RULER_?_F: ""
-# HUMXR_RULER_?_M: ""
+ HUMXR_RULER_?_F: ""
+ HUMXR_RULER_?_M: ""
  
-# HUMXR_RULER_Cody_Gibling_F: "CaptainM"
-# HUMXR_RULER_Cody_Gibling_M: "Gadg8eer"
+ HUMXR_RULER_Cody_Gibling_F1b: "horcruxiteDowel"
+ HUMXR_RULER_Cody_Gibling_F2b: "BellDandy"
+ HUMXR_RULER_Cody_Gibling_F3b: "Muguete"
+ HUMXR_RULER_Cody_Gibling_F4b: "【﻿ｐａｉｎｄｒｏｐ】"
+ HUMXR_RULER_Cody_Gibling_F5b: "EXPLORATRIX PRIMA I"
+ HUMXR_RULER_Cody_Gibling_F6b: "N-Katt"
+ HUMXR_RULER_Cody_Gibling_F7b: "flarecast"
+ HUMXR_RULER_Cody_Gibling_F8b: "Infinity"
+ HUMXR_RULER_Cody_Gibling_F9b: "ZoeIRL"
+ HUMXR_RULER_Cody_Gibling_F10b: "CaptainM"
+ HUMXR_RULER_Cody_Gibling_M1b: "hey!stack"
+ HUMXR_RULER_Cody_Gibling_M2b: "WinterMan"
+ HUMXR_RULER_Cody_Gibling_M3b: "Overlord"
+ HUMXR_RULER_Cody_Gibling_M4b: "RT-Rex"
+ HUMXR_RULER_Cody_Gibling_M5b: ""
+ HUMXR_RULER_Cody_Gibling_M6b: ""
+ HUMXR_RULER_Cody_Gibling_M7b: ""
+ HUMXR_RULER_Cody_Gibling_M8b: ""
+ HUMXR_RULER_Cody_Gibling_M9b: ""
+# HUMXR_RULER_Cody_Gibling_M10: "Gadg8eer"
