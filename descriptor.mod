@@ -5,4 +5,4 @@ tags={
 	"Graphics"
 }
 name="Uploadables: Residual Self-Image Portraits"
-supported_version="3.13"
+supported_version="3.13.1"
