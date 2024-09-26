@@ -3030,16 +3030,14 @@
  HUMXR_CHR_LastName_CharacterFF: "the Destroyer of Worlds"
  HUMXR_CHR_LastName_Character000: "Maylie"
  HUMXR_CHR_LastName_Character001: "Twist"
-
-# HUMXR_RULER_Steven_Wintle_F: "Jenny Everywhere"
-
-
-
- HUMXR_RULER_SuggsMy****sLionel_M: "Lionel Suggs"
  
  HUMXR_RULER_MisterEightySix_F: "EXPLORATRIX PRIMA I"
- HUMXR_RULER_MisterEightySix_M: ""
+# HUMXR_RULER_MisterEightySix_M: "ArcoIris"
  
+# HUMXR_RULER_Steven_Wintle_F: "Jenny Everywhere"
+ 
+ HUMXR_RULER_SuggsMy****sLionel_M: "Lionel Suggs"
+
  HUMXR_RULER_?_F: ""
  HUMXR_RULER_?_M: ""
  
