@@ -1,18 +1,18 @@
 ﻿l_english:
  name_list_HUMXR:0 "Gamerpunk"
 
- HUMXR_SHIP_LazyReference0:0 "Genesis"
+
  HUMXR_SHIP_LazyReference1:0 "Great Escape"
  HUMXR_SHIP_LazyReference2:0 "Year of the Dragon"
  HUMXR_SHIP_LazyReference3:0 "Number Muncher"
- HUMXR_SHIP_LazyReference4:0 "Journey to the West"
+
  HUMXR_SHIP_LazyReference5:0 "Kid Next Door"
- HUMXR_SHIP_LazyReference6:0 "The Divine Comedy"
+
  HUMXR_SHIP_LazyReference7:0 "Goldeneye"
- HUMXR_SHIP_LazyReference8:0 "Oliver Twist"
+
  HUMXR_SHIP_LazyReference9:0 "Mighty No. 9"
- HUMXR_SHIP_LazyReference10:0 "Shazam!"
- HUMXR_SHIP_LazyReference11:0 "Dick Tracy"
+ 
+
  HUMXR_SHIP_LazyReference12:0 "Looney Tunes"
  HUMXR_SHIP_LazyReference13:0 "Manchurian Candidate"
  HUMXR_SHIP_LazyReference14:0 "Happy Days"
@@ -59,17 +59,17 @@
  HUMXR_SHIP_LazyReference55:0 "Freelancer"
  HUMXR_SHIP_LazyReference56:0 "Jet Set Radio"
  HUMXR_SHIP_LazyReference57:0 "Dark Chronicle"
- HUMXR_SHIP_LazyReference58:0 "Narbonic"
+
  HUMXR_SHIP_LazyReference59:0 "M.A.N.T.I.S."
- HUMXR_SHIP_LazyReference60:0 "General Protection Fault"
+
  HUMXR_SHIP_LazyReference61:0 "Street Hawk"
- HUMXR_SHIP_LazyReference62:0 "Sluggy Freelance"
- HUMXR_SHIP_LazyReference63:0 "Schlock Mercenary"
+
+
  HUMXR_SHIP_LazyReference64:0 "Halo"
  HUMXR_SHIP_LazyReference65:0 "Grand Theft Auto"
  HUMXR_SHIP_LazyReference66:0 "Team Fortress"
  HUMXR_SHIP_LazyReference68:0 "Warcraft"
- HUMXR_SHIP_LazyReference69:0 "Oglaf"
+
  HUMXR_SHIP_LazyReference70:0 "Retarded Animal Baby"
  HUMXR_SHIP_LazyReference71:0 "All in the Family"
  HUMXR_SHIP_LazyReference72:0 "Happy Tree Friend"
@@ -77,11 +77,11 @@
  HUMXR_SHIP_LazyReference74:0 "Spore"
  HUMXR_SHIP_LazyReference75:0 "LOST"
  HUMXR_SHIP_LazyReference76:0 "The Collector"
- HUMXR_SHIP_LazyReference77:0 "Twilight"
- HUMXR_SHIP_LazyReference78:0 "Hunger Games"
+
+
  HUMXR_SHIP_LazyReference79:0 "Fortnite"
- HUMXR_SHIP_LazyReference80:0 "Song of Ice and Fire"
- HUMXR_SHIP_LazyReference81:0 "Maze Runner"
+
+
  HUMXR_SHIP_LazyReference82:0 "Mystery Skull"
  HUMXR_SHIP_LazyReference83:0 "Adventure Time"
  HUMXR_SHIP_LazyReference84:0 "Gravity Falls"
@@ -108,15 +108,15 @@
  HUMXR_SHIP_LazyReference105:0 "Lost Frontier"
  HUMXR_SHIP_LazyReference106:0 "Nintendog"
  HUMXR_SHIP_LazyReference107:0 "Samurai Pizza Cat"
- HUMXR_SHIP_LazyReference108:0 "No Game No Life"
+
  HUMXR_SHIP_LazyReference109:0 "Get Ed"
  HUMXR_SHIP_LazyReference110:0 "Epic Mickey"
  HUMXR_SHIP_LazyReference111:0 "Assassin's Creed"
  HUMXR_SHIP_LazyReference112:0 "Fringe"
- HUMXR_SHIP_LazyReference113:0 "Asterisk War"
+
  HUMXR_SHIP_LazyReference114:0 "Journeyman"
  HUMXR_SHIP_LazyReference115:0 "No Man's Sky"
- HUMXR_SHIP_LazyReference116:0 "Reamde"
+
  HUMXR_SHIP_LazyReference117:0 "Splatoon"
  HUMXR_SHIP_LazyReference118:0 "Starbound"
  HUMXR_SHIP_LazyReference119:0 "Glitch Tech"
@@ -126,7 +126,7 @@
  HUMXR_SHIP_LazyReference123:0 "Maniac"
  HUMXR_SHIP_LazyReference124:0 "Prosperous Universe"
  HUMXR_SHIP_LazyReference125:0 "Star Citizen"
- HUMXR_SHIP_LazyReference126:0 "Lord of the Rings"
+
  HUMXR_SHIP_LazyReference127:0 "Spy Game"
  HUMXR_SHIP_LazyReference128:0 "Metroid"
  HUMXR_SHIP_LazyReference129:0 "Star Rail"
@@ -142,11 +142,11 @@
  HUMXR_SHIP_LazyReference139:0 "Sweet Transit"
  HUMXR_SHIP_LazyReference140:0 "Sansar"
  HUMXR_SHIP_LazyReference141:0 "Second Life"
- HUMXR_SHIP_LazyReference142:0 "Snow Crash"
- HUMXR_SHIP_LazyReference143:0 "Ready Player One"
+
+
  HUMXR_SHIP_LazyReference144:0 "Back to the Future"
  HUMXR_SHIP_LazyReference145:0 "Shadowrunner"
- HUMXR_SHIP_LazyReference146:0 "Girl Genius"
+
  HUMXR_SHIP_LazyReference147:0 "Dinosaur"
  HUMXR_SHIP_LazyReference148:0 "Parkasaurus"
  HUMXR_SHIP_LazyReference149:0 "Jurassic Worlder"
@@ -156,7 +156,7 @@
  HUMXR_SHIP_LazyReference153:0 "Satisfactory"
  HUMXR_SHIP_LazyReference154:0 "Volcanoid"
  HUMXR_SHIP_LazyReference155:0 "Subnautica"
- HUMXR_SHIP_LazyReference156:0 "Nobilis"
+
  HUMXR_SHIP_LazyReference157:0 "Palworlder"
  HUMXR_SHIP_LazyReference158:0 "Eden of the East"
  HUMXR_SHIP_LazyReference159:0 "Dennō Coil"
@@ -168,7 +168,7 @@
  HUMXR_SHIP_LazyReference165:0 "Alpha Centauri"
  HUMXR_SHIP_LazyReference166:0 "Beyond Earth"
  HUMXR_SHIP_LazyReference167:0 "Cyber Manhunt"
- HUMXR_SHIP_LazyReference168:0 "Electric Wonderland"
+ HUMXR_SHIP_LazyReference168:0 
  HUMXR_SHIP_LazyReference169:0 "Sunset Overdrive"
  HUMXR_SHIP_LazyReference170:0 "Hover"
  HUMXR_SHIP_LazyReference171:0 "Pirate of the Caribbean"
@@ -1241,19 +1241,19 @@
  HUMXR_CLASS_Literature134: "Yu-Gi-Oh!"
  HUMXR_CLASS_Literature135: "Langolier"
  HUMXR_CLASS_Literature136: "Bicentennial Man"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
- HUMXR_CLASS_?: "?"
+ HUMXR_CLASS_Literature137: "Oneiroi Westerner"
+ HUMXR_CLASS_Literature138: "No Game No Life"
+ HUMXR_CLASS_Literature139: "Asterisk War"
+ HUMXR_CLASS_Literature140: "Reamde"
+ HUMXR_CLASS_Literature141: "Lord of the Rings"
+ HUMXR_CLASS_Literature142: "Snow Crash"
+ HUMXR_CLASS_Literature143: "Ready Player One"
+ HUMXR_CLASS_Literature144: "Back to the Future"
+ HUMXR_CLASS_Literature145: "Girl Genius"
+ HUMXR_CLASS_Literature146: "Jurassic World"
+ HUMXR_CLASS_Literature147: "Nobilis"
+ HUMXR_CLASS_Literature148: "Electric Wonderland"
+ HUMXR_CLASS_Literature149: "?"
  HUMXR_CLASS_?: "?"
  HUMXR_CLASS_?: "?"
  HUMXR_CLASS_?: "?"
@@ -3049,7 +3049,7 @@
  HUMXR_RULER_Cody_Gibling_F6b: "N-Katt"
  HUMXR_RULER_Cody_Gibling_F7b: "flarecast"
  HUMXR_RULER_Cody_Gibling_F8b: "Infinity"
- HUMXR_RULER_Cody_Gibling_F9b: "ZoeIRL"
+ HUMXR_RULER_Cody_Gibling_F9b: ""
  HUMXR_RULER_Cody_Gibling_F10b: "lilSister"
  HUMXR_RULER_Cody_Gibling_F11b: "CaptainM"
  HUMXR_RULER_Cody_Gibling_M1b: "hey!stack"
