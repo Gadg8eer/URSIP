@@ -33,9 +33,6 @@ leader_trait_ursip_steven_wintle_jenny_everywhere = {
         set_name = leader_steven_wintle_jenny_everywhere
 		modification = no
 		hide_age = yes
-		slave_cost = {
-			physics_research = 5000
-		}
 	}
 
 ### Councillor tooltip and reduction of upkeep
