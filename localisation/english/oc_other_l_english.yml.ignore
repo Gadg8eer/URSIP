@@ -1,7 +1,0 @@
-﻿l_english:
- situation_conceptoid_sr_zro_deficit: "Resource deficit: Zro"
- situation_conceptoid_sr_zro_deficit_desc: "We don't have enough zro dust to sustain the existence of all the oneiroids in our empire!"
- situation_conceptoid_sr_zro_deficit_type: "Zro deficit"
- deficit_approach_oneiroid_freeze: "Request volunteers to be put in stasis"
-
- mod_planet_conceptoid_jobs_sr_zro_produces_mult: "Increase supply of £sr_zro£ zro via rationing."

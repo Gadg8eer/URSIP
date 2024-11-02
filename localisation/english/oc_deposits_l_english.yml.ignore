@@ -1,9 +1,0 @@
-﻿l_english:
- d_oneiroid_coffee: "Liquid Nightmares"
- d_oneiroid_cities: "Oneiropolities"
-# d_oneiroid_freethinkers_settlement: "Freethinkers settlement"
-
- d_oneiroid_liquid_nightmares_desc: "This icky, brown, ink-like goop smells awful and occasionally spawns small, vermin-like slimes that must be periodically culled."
-    #"\n\n§YIt will create 1 conceptoid pop and 1 assault army of the same species, that will belong to you. §!"
- d_oneiroid_cities_desc: "Cities founded by your people. Organics cannot survive in such cities unless you construct life support systems."
- d_oneiroid_freethinkers_settlement_desc: "The dwellings of physical beings who are neither idea nor character. How unrealistic!"
