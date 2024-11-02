@@ -9,7 +9,7 @@
 
 ### When it doesn't matter what the specific trait is, only that it makes the ruler into that character.
 ### If the leader has one of these leader traits, this triggers the startup sequence for Gadg8eer as ruler.
-ursip_is_gadg8eer_startup_0 = {
+ursip_is_gadg8eer_startup_trigger_0 = {
 	pre_triggers = {
 		has_owner = yes				# whether the leader exists and is alive
 	}
@@ -29,7 +29,7 @@ ursip_is_gadg8eer_startup_0 = {
 	}
 }
 
-ursip_is_gadg8eer_startup_1 = {
+ursip_is_gadg8eer_startup_trigger_1 = {
 	on_press_begin = {
 		limit = {
 			URSIP_start_0_gadg8eer

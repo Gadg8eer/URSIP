@@ -24,12 +24,11 @@ leader_trait_ursip_steven_wintle_jenny_everywhere = {
 		NOT = {
             from = {
                 has_ethic = "ethic_gestalt_consciousness"
+				
             }
         }
 	}
-	slave_cost = {
-		physics_research = 5000
-		}
+	
 	self_modifier = {
         set_name = leader_steven_wintle_jenny_everywhere
 		modification = no
@@ -38,7 +37,10 @@ leader_trait_ursip_steven_wintle_jenny_everywhere = {
 
 ### Councillor tooltip and reduction of upkeep
 	triggered_self_modifier = {
-		potential = { is_councilor = no }
+		potential = {
+			is_councilor = no
+			
+		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = ursip_steven_wintle_jenny_everywhere_on_council
 		leaders_upkeep_mult = -0.10
@@ -51,7 +53,7 @@ leader_trait_ursip_steven_wintle_jenny_everywhere = {
 			ship_anomaly_fail_risk = -100
 		}
 		# Increase the anomaly research speed by 10%
-		ship_anomaly_research_speed_mult = 0.25
+		ship_anomaly_research_speed_mult = 0.10
 	}
 	
 	modifier = {
@@ -62,8 +64,6 @@ leader_trait_ursip_steven_wintle_jenny_everywhere = {
 	}
 
 ### Trait conflicts
-	gender = female
-	leader_class = { scientist }
 	opposites = {
 		leader_trait_ursip_mistereightysix_arcoiris
 		leader_trait_ursip_mistereightysix_arcoiris_2
@@ -99,13 +99,14 @@ leader_trait_ursip_steven_wintle_jenny_everywhere_2 = {
             }
         }
 	}
-	slave_cost = {
-		sr_dark_matter = 5
-		}
+	
 	self_modifier = {
         set_name = leader_ursip_steven_wintle_jenny_everywhere
 		modification = no
 		hide_age = yes
+		slave_cost = {
+			sr_dark_matter = 5
+		}
 	}
 	
 ### Leader bonuses
@@ -119,7 +120,7 @@ leader_trait_ursip_steven_wintle_jenny_everywhere_2 = {
 		# increased chance to discover rare techs (weighted in tech-script)
 		species_leader_exp_gain = 0.10
 		# Gadg8eer: "Decrease the archaeology failure rate of Jenny's empire to absolutely none, but do not show this to player..."
-		# Also Gadg8eer but evil: "Re-Increase the archaeology failure rate of Jenny's empire to half of default value, do not show this to player! >:D"
+		# Also Gadg8eer but evil: "Re-Increase the archaeology failure rate of Jenny's empire to half of default value if you upgrade her trait (for balance), but do not show this to player! >:D"
 		hidden_effect = {
 			ship_anomaly_fail_risk = -50
 		}
@@ -132,8 +133,6 @@ leader_trait_ursip_steven_wintle_jenny_everywhere_2 = {
 	}
 
 ### Trait conflicts
-	gender = female
-	leader_class = { scientist }
 	opposites = {
 		leader_trait_ursip_mistereightysix_arcoiris
 		leader_trait_ursip_mistereightysix_arcoiris_2

@@ -9,22 +9,28 @@
 
 ### Start with Gadg8eer
 ursip_scripted_effect_codygibling_gadg8eer_start_0 = {
-	if = {
-		immediate = {
-			owner = {
-				ruler = {
-					set_name = leader_codygibling_gadg8eer
-					leader_age_min = 10
-					set_age = 10
-					leader_age_max = 85
-					set_gender = male
-					hide_age = no
-					set_leader_flag = leader_is_URSIP_CodyGibling_Gadg8eer
-					set_pop_flag = pop_contains_URSIP_CodyGibling_Gadg8eer
+	pre_triggers = {
+		has_owner = yes				# whether the leader exists and is alive
+		is_idle = yes				# whether the leader is idle
+	}
+	trigger = {
+		trait_ruler_ursip_codygibling_gadg8eer
+	}
+	immediate = {
+		owner = {
+			ruler = {
+				set_name = leader_codygibling_gadg8eer
+				leader_age_min = 10
+				set_age = 10
+				leader_age_max = 85
+				set_gender = male
+				hide_age = no
+				set_leader_flag = leader_is_URSIP_CodyGibling_Gadg8eer
+				set_pop_flag = pop_contains_URSIP_CodyGibling_Gadg8eer
 				}
 			}
-		# Set flag because THERE CAN BE ONLY ONE!
-		set_global_flag = global_rulerclaim_URSIP_CodyGibling_Gadg8eer
+	# Set flag because THERE CAN BE ONLY ONE!
+	set_global_flag = global_rulerclaim_URSIP_CodyGibling_Gadg8eer
 	}
 }
 

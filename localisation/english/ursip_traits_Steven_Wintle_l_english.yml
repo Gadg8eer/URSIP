@@ -1,0 +1,13 @@
+﻿l_english:
+ #---------#
+ #Ruler OCs#
+ #---------#
+ 
+#leader_steven_wintle_jenny_everywhere: "Jenny Everywhere"
+ ursip_steven_wintle_txtfrag0: "Shifter"
+ ursip_steven_wintle_licence0: "§YThe character of Jenny Everywhere is available for use by anyone, with only one condition. This paragraph must be included in any publication involving Jenny Everywhere, in order that others may use this property as they wish. All rights reversed.§T"
+ ursip_steven_wintle_note0: "§KNote:§G Jenny Everywhere, the Shifter, is an Open Source character created by Steven Wintle but available to everyone as long as the above paragraph is included. That said, her traditional description §Y(seen in the §MResidual Self-Image Portrait included with this mod)§G is almost always used regardless of the canon she appears in.§T Thank you, Steven!"
+ leader_trait_ursip_steven_wintle_jenny_everywhere: "The $ursip_steven_wintle_txtfrag0$"
+ leader_trait_ursip_steven_wintle_jenny_everywhere_desc: "This leader bears a very run-of-the-mill Residual Self-Image but has an odd, intrinsic connection to some sort of other reality. It is hypothesized that [pop.GetSheHe] may be a multiversal constant of some sort.\n----------\n$ursip_steven_wintle_licence0$\n\n$ursip_steven_wintle_note0$"
+ leader_trait_ursip_steven_wintle_jenny_everywhere_2: "$leader_steven_wintle_jenny_everywhere$"
+ leader_trait_ursip_steven_wintle_jenny_everywhere_2_desc: "This leader has an intrinsic connection to [pop.GetHerHis] alternate selves across the multiverse. It is hypothesized that [pop.GetSheHe] may be a multiversal constant of some sort. Whatever the case, [pop.GetSheHe] is a skilled explorer who loves toast.\n----------\n$ursip_steven_wintle_licence0$\n\n$ursip_steven_wintle_note0$"
