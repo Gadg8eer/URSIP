@@ -4,5 +4,6 @@ tags={
 	"Leaders"
 	"Graphics"
 }
-name="Uploadables: Residual Self-Image Portraits"
-supported_version="3.13.1"
+
+name="URSIP, or, Uploadables: Residual Self-Image Portraits"
+supported_version="3.14.1"

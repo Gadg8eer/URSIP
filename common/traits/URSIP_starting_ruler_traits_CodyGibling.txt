@@ -125,7 +125,7 @@ leader_trait_ursip_codygibling_gadg8eer = {
 }
 
 ##### Vanilla Version, Player-usable
-leader_trait_ursip_codygibling_gadg8eer = {
+trait_ruler_ursip_codygibling_gadg8eer = {
 	cost = 1
 	modification = no
 	icon = "gfx/interface/icons/traits/GFX_trait_mechanical.dds"

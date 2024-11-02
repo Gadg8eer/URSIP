@@ -1,7 +1,7 @@
 namespace = ursip_codygibling
 
 ### At the game start, set gadg8eer's age to 10, enforce his name, and set his maximum lifespan to 85
-leader_event = {
+on_game_start = {
 	id = ursip_codygibling.0
 	hide_window = yes
 	# title = ursip_codygibling.0.name
@@ -18,10 +18,10 @@ leader_event = {
 		is_idle = no				# whether the leader is idle
 	}
 	trigger = { # URSIP_scripted_triggers
-		URSIP_is_gadg8eer_startup_0 = true
+		ursip_is_gadg8eer_startup_trigger_0 = true
 	}
 	effect = { # URSIP_scripted_effects
-		ursip_scripted_effect_codygibling_gadg8eer_start_0 = true
+		set_global_flag = ursip_scripted_effect_codygibling_gadg8eer_start_0
 	}
 }
 
@@ -43,6 +43,7 @@ leader_event = {
 		URSIP_is_gadg8eer_startup_1 = true
 	}
 	effect = { # URSIP_scripted_effects
+		set_leader_flag = CodyGibling_Gadg8eer
 		URSIP_start_1_gadg8eer = true
 	}
 }
@@ -62,6 +63,9 @@ leader_event = {
 	trigger = { # URSIP_scripted_triggers
 		is_deadbutessential_gadg8eer = true
 	}
+	effect = ( # 
+		set_global_flag = CodyGibling_Gadg8eer_game_over
+	}
 }
 
 ### If Gadg8eer dies by accident or turns 86 years old without any form of immortality, it's game over.
@@ -75,7 +79,7 @@ leader_event = {
 			# Effects that are applied after option is chosen.
 			# Will generate a tooltip in addition the tooltip of every option, unless hidden_effect is used.
 			hidden_effect = {
-				URSIP_CodyGibling_death_of_an_inner_child
+				destroy_country = yes
 			}
 		}
 	}
@@ -90,6 +94,9 @@ leader_event = {
 		after = {
 			# Effects that are applied after option is chosen.
 			# Will generate a tooltip in addition the tooltip of every option, unless hidden_effect is used.
+			hidden_effect = {
+				
+			}
 		}
 	}
 	
