@@ -13,3 +13,43 @@ VIR_HUM = {
 	graphical_culture = humanoid_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
+
+ONEIROID = {
+	archetype = CONCEPTOID
+
+	randomized = yes
+	gender = yes
+
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_fanatic_purifiers
+			}
+			NOT = {
+				value = auth_machine_intelligence
+				text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
+			}
+		}
+		origins = {
+			NOT = {
+				value = origin_broken_shackles
+			}
+		}
+	}
+	possible_secondary = {
+		civics = {
+			value = civic_tulpa_forcers
+		}
+	}
+
+	#gender = yes
+	#portrait_modding = yes
+
+	leader_age_min = 1
+	leader_age_max = 12000
+
+	graphical_culture = plantoid_01 #conceptoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	trait = "trait_conceptoid"
+	resources = {}
+}
