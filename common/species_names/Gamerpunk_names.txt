@@ -1,4 +1,4 @@
-HUMXR1 = {
+VIR_HUM = {
 	uploadable_humanoid1 = {
 		name = Human
 		plural = Humans
