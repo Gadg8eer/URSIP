@@ -1,41 +1,54 @@
 # Cody Gibling's Gadg8eer
 #- (Trademarked; I, the original creator of this file, am the one who goes by the name Cody Gibling, though to be honest its a pen name because I like my work to be able to stand on its own merits. Please don't repost this file anywhere except Stellaris mod-related websites (Steam, the Stellaris community on the FediVerse, Good Old Games, Stellaris fan forums and Guilded servers, etc.), though anyone is free to update the mod including this file to run with any version of Stellaris they prefer.) -#
-# This file is part of the Virtual Avatars: Residual Self-Image Portraits (URSIP) mod for Stellaris. The character portraits provided by this file are used under license or with the permission of the character's creator. Please read the code comments (the #???? thingies just below this) to understand what is and isn't legally okay to do with this artist's works.
+# This file is part of the Metaverse Avatar Portraits (MAP) mod for Stellaris. The character portraits provided by this file are used under license or with the permission of the character's creator. Please read the code comments (the #???? thingies just below this) to understand what is and isn't legally okay to do with this artist's works.
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 # Gadg8eer © 1990-2024 Cody Gibling. All Rights reserved.																												 #
 # Gadg8eer™ as a fictional character is a trademark of Cody Gibling under Canadian trademark law. Please don't use without permission, you'd be messing with my persona. #
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 # If you understand and accept the above conditions, you may proceed.
 
+Step 1: Load game
 ### When it doesn't matter what the specific trait is, only that it makes the ruler into that character.
 ### If the leader has one of these leader traits, this triggers the startup sequence for Gadg8eer as ruler.
-ursip_is_gadg8eer_startup_trigger_0 = {
+ursip_startup_trigger_CodyGibling_Gadg8eer_0 = {
 	pre_triggers = {
 		has_owner = yes				# whether the leader exists and is alive
 	}
 	on_game_start = {
 		limit = {
-			owner = {
-				ruler = {
-					OR = {
-						has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
-						has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
-						has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
-						has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+			AND = {
+				owner = {
+					ruler = {
+						OR = {
+							is_ruler = yes
+							is_heir = yes
+						OR = {
+							has_ruler_trait = leader_trait_ursip_codygibling_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_quick_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_social_gadg8eer
+							has_ruler_trait = leader_trait_ursip_codygibling_playing_gadg8eer
+						}
 					}
 				}
 			}
 		}
 	}
 }
+# Should trigger event; ursip_codygibling.0
+# In turn, ursip_codygibling.0 activates global flag; ursip_scripted_effect_codygibling_gadg8eer_start_0
+# ursip_scripted_effect_codygibling_gadg8eer_start_0 tells the effects to engage and prepares the next step.
 
-ursip_is_gadg8eer_startup_trigger_1 = {
+### Step 2: Press begin
+ursip_startup_trigger_1 = {
 	on_press_begin = {
 		limit = {
-			URSIP_start_0_gadg8eer
+			has_global flag = ursip_scripted_effect_codygibling_gadg8eer_start_0
 		}
 	}
 }
+# Should trigger event; ursip_codygibling.1
+# In turn, ursip_codygibling.1 activates global flag; ursip_scripted_effect_codygibling_gadg8eer_start_0
+# ursip_scripted_effect_codygibling_gadg8eer_start_0 tells the effects to engage and prepares the next step.
 
 ursip_is_gadg8eer = {
 	pre_triggers = {
@@ -74,7 +87,6 @@ ursip_is_basic_gadgeteer = {
 				}
 		}
 	}
-	
 }
 
 ### Named after the ability from GURPS 3e.
@@ -250,7 +262,7 @@ ursip_is_deadbutessential_ursip_codygibling_gadg8eer = {
 				event_target:Gadg8eer = {
 					OR = {
 						AND = {
-							has_leader_flag = leader_is_URSIP_CodyGibling_Gadg8eer
+							has_leader_flag = leader_is_MAP_CodyGibling_Gadg8eer
 							leader_age = 86
 							is_immortal = no
 						}
