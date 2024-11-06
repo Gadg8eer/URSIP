@@ -1,15 +1,15 @@
-namespace = ursip_codygibling
+namespace = metaverse.avatar.portraits_codygibling
 
 ### At the game start, set gadg8eer's age to 10, enforce his name, and set his maximum lifespan to 85
 on_game_start = {
-	id = ursip_codygibling.0
+	id = metaverse.avatar.portraits_codygibling.0
 	hide_window = yes
-	# title = ursip_codygibling.0.name
-	# desc = ursip_codygibling.0.desc_01
+	# title = metaverse.avatar.portraits_codygibling.0.name
+	# desc = metaverse.avatar.portraits_codygibling.0.desc_01
 	is_triggered_only = yes
 	fire_only_once = yes
-	# title = ursip_codygibling.0.name
-	# desc = ursip_codygibling.0.desc_01
+	# title = metaverse.avatar.portraits_codygibling.0.name
+	# desc = metaverse.avatar.portraits_codygibling.0.desc_01
 
 	# picture = GFX_evt_astral_rift_tomb
 	# show_sound = event_default
@@ -18,21 +18,23 @@ on_game_start = {
 		is_idle = no				# whether the leader is idle
 	}
 	trigger = { # URSIP_scripted_triggers
-		ursip_is_gadg8eer_startup_trigger_0 = true
+		ursip_startup_trigger_CodyGibling_Gadg8eer_0 = true
 	}
 	effect = { # URSIP_scripted_effects
 		set_global_flag = ursip_scripted_effect_codygibling_gadg8eer_start_0
+		
+		URSIP_start_0_gadg8eer = true
 	}
 }
 
 ### At the beginning of play, save Gadg8eer as an event target
 leader_event = {
-	id = ursip_codygibling.1
+	id = metaverse.avatar.portraits_codygibling.1
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
-	# title = ursip_codygibling.1.name
-	# desc = ursip_codygibling.1.desc_01
+	# title = metaverse.avatar.portraits_codygibling.1.name
+	# desc = metaverse.avatar.portraits_codygibling.1.desc_01
 	
 	pre_triggers = {
 		has_owner = yes				# whether the leader exists and is alive
@@ -40,7 +42,7 @@ leader_event = {
 					
 	}
 	trigger = { # URSIP_scripted_triggers
-		URSIP_is_gadg8eer_startup_1 = true
+		ursip_startup_trigger_1 = true
 	}
 	effect = { # URSIP_scripted_effects
 		set_leader_flag = CodyGibling_Gadg8eer
@@ -50,9 +52,9 @@ leader_event = {
 
 ### If Gadg8eer becomes 86 years old, he dies.
 leader_event = {
-	id = ursip_codygibling.2
-	title = ursip_codygibling.2.name
-	desc = ursip_codygibling.2.desc_01
+	id = metaverse.avatar.portraits_codygibling.2
+	title = metaverse.avatar.portraits_codygibling.2.name
+	desc = metaverse.avatar.portraits_codygibling.2.desc_01
 	is_triggered_only = yes
 
 	picture = GFX_evt_astral_rift_tomb
@@ -70,8 +72,8 @@ leader_event = {
 
 ### If Gadg8eer dies by accident or turns 86 years old without any form of immortality, it's game over.
 	option = {
-		name = ursip_codygibling.2.a # Game over
-		custom_tooltip = ursip_codygibling.2.a.tooltip
+		name = metaverse.avatar.portraits_codygibling.2.a # Game over
+		custom_tooltip = metaverse.avatar.portraits_codygibling.2.a.tooltip
 		exclusive_trigger = {
 			
 		}
@@ -86,8 +88,8 @@ leader_event = {
 
 ### If Gadg8eer manages to achieve miscellaneous immortality, but dies to an event, he is saved ONCE by rejuvenation and cloning tech.
 	option = {
-		name = ursip_codygibling.2.b # Saved by biological immortality or some other form of immortality
-		custom_tooltip = ursip_codygibling.2.b.tooltip
+		name = metaverse.avatar.portraits_codygibling.2.b # Saved by biological immortality or some other form of immortality
+		custom_tooltip = metaverse.avatar.portraits_codygibling.2.b.tooltip
 		allow = {
 			is_deadbutimmortal_gadg8eer = true
 		}
@@ -102,8 +104,8 @@ leader_event = {
 	
 ### If Gadg8eer is a Conceptoid, he wakes up in a new dreamscape when he dies
 	option = {
-		name = ursip_codygibling.2.c # Conceptoid
-		custom_tooltip = ursip_codygibling.2.c.tooltip
+		name = metaverse.avatar.portraits_codygibling.2.c # Conceptoid
+		custom_tooltip = metaverse.avatar.portraits_codygibling.2.c.tooltip
 		trigger = {
 			is_deadbutdreaming_gadg8eer = true
 		}
@@ -115,8 +117,8 @@ leader_event = {
 
 ### If Gadg8eer's empire manages to get the right ascension perks, he respawns when he dies
 	option = {
-		name = ursip_codygibling.2.d # Is immortal as a virtual entity
-		custom_tooltip = ursip_codygibling.2.d.tooltip
+		name = metaverse.avatar.portraits_codygibling.2.d # Is immortal as a virtual entity
+		custom_tooltip = metaverse.avatar.portraits_codygibling.2.d.tooltip
 		allow = {
 			is_deadbutrespawns_gadg8eer = yes
 		}
@@ -129,9 +131,9 @@ leader_event = {
 
 ### If the player attempts to remove Gadg8eer from power, he will be automatically reinstated and an event will trigger.
 leader_event = {
-	id = ursip_codygibling.3
-	title = ursip_codygibling.3.name
-	desc = ursip_codygibling.3.desc_01
+	id = metaverse.avatar.portraits_codygibling.3
+	title = metaverse.avatar.portraits_codygibling.3.name
+	desc = metaverse.avatar.portraits_codygibling.3.desc_01
 	is_triggered_only = yes
 
 	picture = GFX_origin_legendary_leader
@@ -146,8 +148,8 @@ leader_event = {
 
 ### The "can't remove this ruler" message.
 	option = {
-		name = ursip_codygibling.3.a # Game over
-		custom_tooltip = ursip_codygibling.3.a.tooltip
+		name = metaverse.avatar.portraits_codygibling.3.a # Game over
+		custom_tooltip = metaverse.avatar.portraits_codygibling.3.a.tooltip
 		trigger = {
 			who = {
 				event_target:Gadg8eer = {

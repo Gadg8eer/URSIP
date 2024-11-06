@@ -1,0 +1,65 @@
+# FediVirtual 00 - Generic Pop
+entity = {
+	name ="synthetics_xr_portrait_jenny_everywhere_entity"
+	pdxmesh ="synthetics_02_portrait_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.45 chance = 10 looping = no next_state = idle}
+	scale = 1.00
+
+}
+
+# Conceptoid 00 - Generic Pop
+entity = {
+	name ="conceptoid_oneirochron_portrait_jenny_everywhere_entity"
+	pdxmesh ="synthetics_02_portrait_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.45 chance = 10 looping = no next_state = idle}
+	scale = 1.00
+
+}
+
+# FediVirtual 00 - Jenny Everywhere
+entity = {
+	name ="synthetics_xr_portrait_jenny_everywhere_entity"
+	pdxmesh ="synthetics_02_portrait_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.45 chance = 10 looping = no next_state = idle}
+	scale = 1.00
+
+}
+
+# Conceptoid 00 - Jenny Everywhere
+entity = {
+	name ="conceptoid_oneirochron_portrait_jenny_everywhere_entity"
+	pdxmesh ="synthetics_02_portrait_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.45 chance = 10 looping = no next_state = idle}
+	scale = 1.00
+
+}
+
+# FediVirtual zz - Gadg8eer
+entity = {
+	name ="synthetics_xr_portrait_gadg8eer_entity"
+	pdxmesh ="synthetics_02_portrait_02_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.45 chance = 10 looping = no next_state = idle}
+	scale = 1.00
+
+}
+
+# Conceptoid zz - Gadg8eer
+entity = {
+	name ="conceptoid_oneirochron_portrait_gadg8eer_entity"
+	pdxmesh ="synthetics_02_portrait_02_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"    animation_blend_time = 0.45 chance = 10 looping = no next_state = idle}
+	scale = 1.00
+
+}

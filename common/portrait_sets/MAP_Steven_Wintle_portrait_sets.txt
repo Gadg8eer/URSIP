@@ -71,8 +71,65 @@ humanoids_virtual = {
 }
 
 
+humanoids_virtual = {
+	species_class = HUM
 
+	portraits = {
+		"humanoid_02"
+		"humanoid_03"
+		"humanoid_04"
+		"humanoid_05"
+	}
 
+	conditional_portraits = {
+		randomizable = {
+			host_has_dlc = "Humanoids Species Pack"
+		}
+		playable = {
+			local_has_dlc = "Humanoids Species Pack"
+		}
+		portraits = {
+			"humanoid_hp_01"
+			"humanoid_hp_02"
+			"humanoid_hp_06"
+			"humanoid_hp_07"
+			"humanoid_hp_08"
+			"humanoid_hp_09"
+			"humanoid_hp_10"
+			"humanoid_hp_11"
+			"humanoid_hp_12"
+			"humanoid_hp_13"
+			"humanoid_hp_14"
+			"humanoid_elf"
+		}
+	}
+
+	conditional_portraits = {
+		randomizable = {
+			host_has_dlc = "Astral Planes"
+		}
+		playable = {
+			local_has_dlc = "Astral Planes"
+		}
+		portraits = {
+			"humanoid_hp_16"
+		}
+	}
+	
+	conditional_portraits = {
+		randomizable = {
+			host_has_dlc = "Synthetic Dawn"
+			host_has_dlc = "The Machine Age"
+		}
+		playable = {
+			local_has_dlc = "Synthetic Dawn"
+			local_has_dlc = "The Machine Age"
+		}
+		portraits = {
+			"humanoid_hp_16"
+		}
+	}
+}
 
 
 

@@ -1,0 +1,156 @@
+portrait_groups = {
+	example = {
+		default = example_red
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+					XR_f
+					XR_m
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+				}
+			}
+		}
+
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+					if = {
+						NOT = {
+							
+						}
+					} else = {
+						TOON_Steven_Wintle_Jenny_Everywhere
+					}
+					if = {
+						NOT = {
+							has_global_flag = global_MAP_rulerclaim_CodyGibling_Gadg8eer
+						}
+					} then = {
+						synthXR_Steven_Wintle_Jenny_Everywhere
+					}
+				}
+			}
+		}
+
+		#ruler scope
+		ruler = {
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+				}
+			}
+		}
+	}
+	
+	
+	metaverse = {
+		default = example_green
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+					XR_f
+					XR_m
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+					XR_f
+					XR_m
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+					XR_f
+					XR_m
+				}
+			}
+		}
+
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+					XR_f
+					XR_m
+					if = {
+						NOT = {
+							has_global_flag = 
+						}
+					} else = {
+						TOON_Steven_Wintle_Jenny_Everywhere
+					}
+					if = {
+						NOT = {
+							has_global_flag = global_MAP_rulerclaim_CodyGibling_Gadg8eer
+						}
+					} then = {
+						synthXR_Steven_Wintle_Jenny_Everywhere
+					}
+				}
+			}
+		}
+
+		#ruler scope
+		ruler = {
+			add = {
+				portraits = {
+					example_red
+					example_green
+					example_blue
+					XR_f
+					XR_m
+				}
+			}
+		}
+	}
+}

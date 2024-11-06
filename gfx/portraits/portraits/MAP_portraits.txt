@@ -10,12 +10,12 @@
 
 ############################
 
-	example_red = 
-	example_green = 
-	example_blue = 
+#	example_red = 
+#	example_green = 
+#	example_blue = 
 
-	# Human
-	synthXR_f = {
+	# Metaverse, Female
+	TOON_f = {
 		entity = "synthetics_XR_portrait_01_entity"
 		clothes_selector = "no_texture"
 		attachment_selector = "no_texture"
@@ -33,10 +33,12 @@
 						# stage 1, masculine female variant
 						{ texturefile = "gfx/models/portraits/example/example_green.dds" }
 					}
-					values = {
+######################### Every universe has a Jenny Everywhere, so it's possible to have more than one.
+######################### However, for the purposes of this mod, we'll assume she only looks like herself in places like VR, dreams or the Shroud.
+#					values = {
 						# stage 1, Jenny Everywhere
-						{ texturefile = "gfx\models\portraits\synthetics_machine\StevenWintle\Jenny_Everywhere.dds" }
-					}
+#						{ texturefile = "gfx\models\portraits\synthetics_machine\StevenWintle\Jenny_Everywhere.dds" }
+#					}
 #					values = {
 						# stage 1 variant 4
 #						{
@@ -55,9 +57,9 @@
 					#leader, pop or species scope (when called with species scope, from subscope can contain a country species related to)
 					# Set to always = no as we only use this for showing the portrait in the empire creator
 					# The actual portrait swap is done via set_synth_or_robot_portrait_effect to ensure the species archetype is changed as well
-					trigger = {
-						always = no
-					}
+#					trigger = {
+#						always = no
+#					}
 				}
 			}
 		}
@@ -73,8 +75,8 @@
 #		custom_close_up_scale = 2.3
 	}
 
-	# Human
-	synthXR_m = {
+	# Conceptoid Toons, Male
+	TOON_m = {
 		entity = "synthetics_XR_portrait_01_entity"
 		clothes_selector = "no_texture"
 		attachment_selector = "no_texture"
@@ -106,10 +108,11 @@
 #							mask = "gfx/models/portraits/common/empty_portrait_evolution_mask.dds"
 #						}
 #					}
-					values = {
+######################### Gadg8eer is a universal singularity; He only ever exists in one world at a time.
+#					values = {
 						# stage 1, Gadg8eer
-						{ texturefile = "gfx\models\portraits\synthetics_machine\CodyGibling\Gadg8eer.dds" }
-					}
+#						{ texturefile = "gfx\models\portraits\synthetics_machine\CodyGibling\Gadg8eer.dds" }
+#					}
 
 					#leader, pop or species scope (when called with species scope, from subscope can contain a country species related to)
 					# Set to always = no as we only use this for showing the portrait in the empire creator
@@ -130,4 +133,18 @@
 
 #		custom_close_up_position_offset = { x = 85 y = 410 }
 #		custom_close_up_scale = 2.3
+	}
+	
+##### Jenny Everywhere
+######################### Every universe has a Jenny Everywhere, so it's possible to have more than one.
+######################### However, for the purposes of this mod, we'll assume she only looks like herself in places like VR, dreams or the Shroud.
+	TOON_Steven_Wintle_Jenny_Everywhere = {
+		entity = "MAP_portrait_Steven_Wintle_Jenny_Everywhere_entity"
+		texturefile = "gfx/interface/portraits/synthetics_machine/StevenWintle/Jenny_Everywhere.dds"
+	}
+
+##### Gadg8eer
+	TOON_CodyGibling_Gadg8eer = {
+		entity = "MAP_portrait_CodyGibling_Gadg8eer_entity"
+		texturefile = "gfx/interface/portraits/synthetics_machine/CodyGibling/Gadg8eer.dds"
 	}

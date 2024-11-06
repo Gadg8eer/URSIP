@@ -8,7 +8,7 @@
 # If you understand and accept the above conditions, you may proceed.
 
 ### Start with Gadg8eer
-ursip_scripted_effect_codygibling_gadg8eer_start_0 = {
+MAP_scripted_effect_codygibling_gadg8eer_start_0 = {
 	pre_triggers = {
 		has_owner = yes				# whether the leader exists and is alive
 		is_idle = yes				# whether the leader is idle
@@ -27,6 +27,7 @@ ursip_scripted_effect_codygibling_gadg8eer_start_0 = {
 				hide_age = no
 				set_leader_flag = leader_is_MAP_CodyGibling_Gadg8eer
 				set_pop_flag = pop_contains_MAP_CodyGibling_Gadg8eer
+				change_leader_portrait = 
 				}
 			}
 	# Set flag because THERE CAN BE ONLY ONE!
@@ -34,18 +35,19 @@ ursip_scripted_effect_codygibling_gadg8eer_start_0 = {
 	}
 }
 
-ursip_scripted_effect_codygibling_gadg8eer_start_1 = {
+MAP_scripted_effect_codygibling_gadg8eer_start_1 = {
 	immediate = {
 		owner = {
 			ruler = {
 				save_global_event_target_as = Gadg8eer
 			}
 		}
+		
 	}
 }
 
 ### If Gadg8eer is manually removed from the position of ruler (by the player), he is returned to the position and a message is displayed.
-ursip_scripted_effect_codygibling_gadg8eer_oops_noremove = {
+MAP_scripted_effect_codygibling_gadg8eer_oops_noremove = {
 	pre_triggers = {
 		has_owner = yes				# whether the leader exists and is alive
 		is_idle = yes				# whether the leader is idle
@@ -65,7 +67,7 @@ ursip_scripted_effect_codygibling_gadg8eer_oops_noremove = {
 					assign_leader = ruler
 					set_leader_flag = prevent_remove_MAP_CodyGibling_Gadg8eer
 					leader_event = {
-						id = ursip_codygibling.3
+						id = metaverse.avatar.portraits_codygibling.3
 					}
 				}
 			}
@@ -75,15 +77,16 @@ ursip_scripted_effect_codygibling_gadg8eer_oops_noremove = {
 
 ### If Gadg8eer becomes 86 years old or is forcibly removed from the position of ruler, he dies.
 ### Also includes compatibility with Constructorvette Mod.
-ursip_scripted_effect_codygibling_death_of_an_inner_child_0 = {
+MAP_scripted_effect_codygibling_death_of_an_inner_child_0 = {
 	on_leader_death = {
 		limit = {
 			who = {
 				event_target:Gadg8eer = {
-					set_country_flag = is_deadbutessential_ursip_codygibling_gadg8eer
+					has_leader_flag = leader_is_MAP_CodyGibling_Gadg8eer
 				}
 			}
 		}
+		set_global_flag = MAP_CodyGibling_Gadg8eer_is_dead
 	}
 	on_ruler_removed = {
 		pre_triggers = {

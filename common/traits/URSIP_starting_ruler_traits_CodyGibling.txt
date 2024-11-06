@@ -15,18 +15,15 @@ leader_trait_ursip_codygibling_gadg8eer = {
 	leader_potential_add {
 		gender = male
 		leader_class = { official commander scientist }
+		leader_trait = { official commander scientist }
 		NOT = {
 			from = {
 				has_ethic = "ethic_gestalt_consciousness"
 			}
+			has_global_flag = Global_Gadg8eer
 		}
-	}
-	modifier = {
-		
-	}
-	leader_trait = { official commander scientist }
-	leader_class = { official commander scientist }
-	opposites = {
+### Can't have these traits
+		opposites = {
 		"leader_trait_paranoid"
 		"leader_trait_paranoid_2"
 		"leader_trait_spark_of_genius"
@@ -34,20 +31,30 @@ leader_trait_ursip_codygibling_gadg8eer = {
 		"leader_trait_maniacal"
 		"leader_trait_maniacal_2"
 		"leader_trait_maniacal_3"
-### can't be any of the following characters at the same time
+# can't be any of the following characters at the same time
 		"leader_trait_ursip_mistereightysix_arcoiris"
 		"leader_trait_ursip_mistereightysix_arcoiris_2"
 		"leader_trait_ursip_steven_wintle_jenny_everywhere"
 		"leader_trait_ursip_steven_wintle_jenny_everywhere_2"
 		"leader_trait_ursip_codygibling_playing_gadg8eer"
 	}
-	
+### 
+	modifier = {
+		set_global_flag = Global_Gadg8eer
+		set_country_flag = Country_Gadg8eer
+		set_leader_flag = Gadg8eer
+	}
 ### When Gadg8eer is uploaded or a Conceptoid, but he is older than 10, his age will be reverted to 10 and his original gender and his name will be enforced.
 ### This is meant to repeat whenever he would become a year older.
 	triggered_self_modifier = {
 		who = {
 			event_target:Gadg8eer = {
 				potential = {
+					AND = {
+						has_global_flag = Global_Gadg8eer
+						has_country_flag = Country_Gadg8eer
+						has_leader_flag = Gadg8eer
+					}
 					OR {
 						AND {
 							OR = {
@@ -76,6 +83,7 @@ leader_trait_ursip_codygibling_gadg8eer = {
 				set_gender = male
 				set_immortal = yes
 				set_name = leader_codygibling_gadg8eer/ruler
+				change_leader_portrait = URSIP_portrait_CodyGibling_Gadg8eer_entity
 			}
 		}
 	}
@@ -100,6 +108,7 @@ leader_trait_ursip_codygibling_gadg8eer = {
 					}
 				}
 				set_name = leader_codygibling_gadg8eer/ruler
+				# EVENT WINDOW TO TELL YOU THAT CAN'T RENAME THIS CHARACTER!
 			}
 		}
 	}
